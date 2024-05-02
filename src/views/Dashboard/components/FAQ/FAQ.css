@@ -1,0 +1,132 @@
+.faq-container {
+  /* border: 2px solid green; */
+}
+.faq-content-row {
+  display: flex;
+  /* align-items: stretch; */
+  max-width: 144rem;
+  margin: 0 auto;
+  padding: 6rem;
+  gap: 4rem;
+  /* border: 2px solid red; */
+}
+
+.faq-column {
+  flex: 1;
+}
+
+.faq-content-column {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  /* border: 2px solid red; */
+}
+
+.faq-caption-row {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.faq-answer-area {
+  /* border: 3px solid blue; */
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background: var(--secondarybg);
+  border-radius: 2rem;
+  margin: 1rem;
+  padding: 1rem 2.5rem;
+}
+
+.faq-item {
+  margin: 1.5rem 0;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.faq-item h4 {
+  transition: 0.2s ease;
+}
+
+/* .faq-item:hover {
+  transform: scale(1.1, 1);
+  text-shadow: 1px 1px 5px var(--maincolor);
+} */
+
+.faq-item h4:hover {
+  transform: scale(1.1, 1);
+  text-shadow: 1px 1px 1px var(--maincolor), 1px 1px 5px var(--maincolor);
+}
+
+.answer-div {
+  position: absolute;
+  /* transform: scale(0); */
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.no-answer-div {
+  display: flex;
+}
+
+.contact-link {
+  /* text-shadow: 1px 1px 1px var(--maincolor); */
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 950px) {
+  .faq-content-row {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.slide-left {
+  animation: slideleft 1s forwards;
+}
+
+@keyframes slideleft {
+  100% {
+    transform: translateX(-100vw);
+  }
+}
+
+.slide-right {
+  animation: slideright 1s forwards;
+}
+
+@keyframes slideright {
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+.scale-answer {
+  opacity: 0;
+  animation: scaleanswer 1s 1s forwards;
+}
+
+@keyframes scaleanswer {
+  0% {
+    opacity: 1;
+    filter: blur(20px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+  }
+}

@@ -1,0 +1,13 @@
+{
+    "data":
+    [
+        {"id":1,"question":"What is the average cost of a website?","answer":"Prices vary according to the requirements of each project. There is a minimum price of $1,000 for a project, but we can assess the scope of your project together so that both of us understand what it is going to cost."},
+        {"id":2,"question":"How long does it take to build a website?","answer":"Once the project has begun, the time frame is between 2-4 weeks. Furthermore, the time limit is determined by the scope of the project and how quickly feedback is provided."},
+        {"id":3,"question":"What if I don't like the design?","answer":"Your satisfaction is my primary goal here, so don't worry, I'll make sure you love the finished version. There are multiple revisions made throughout the design and development process to ensure that you are on track with your website."},
+        {"id":4,"question":"How do you develop the websites?","answer":"My websites are built using traditional coding methods rather than no-code platforms as it gives me superior control and allows for optimal customization."},
+        {"id":5,"question":"Can you provide me with training or support after the project is completed?","answer":"Yes, of course! After each project, there is a two-week period in which I will fix and arrange everything possible on the site if necessary, and I will also give a brief tutorial on how things can be changed on the site without the need for me or a developer."}
+    ]
+}
+
+
+

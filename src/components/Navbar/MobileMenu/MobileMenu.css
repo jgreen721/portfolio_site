@@ -1,0 +1,39 @@
+.mobile-menu {
+  position: absolute;
+  z-index: 1000;
+  right: 0;
+  height: 100vh;
+  background: var(--secondarybg);
+  padding: 12rem 3rem;
+  top: 100%;
+  transform-origin: top;
+  transition: 0.25s ease;
+  border: 2px solid black;
+  width: 300px;
+}
+
+.hide-mobile-menu {
+  transform: scaleY(0);
+}
+
+.nav-link-item {
+  margin: 1.5rem 0;
+  color: var(--mainbg);
+}
+
+.mobile-site-link {
+  color: var(--maincolor);
+  cursor: pointer;
+  text-shadow: 1px 1px 1px var(--mainbg);
+  text-transform: uppercase;
+  position: relative;
+  font-weight: 300;
+}
+
+.mobile-site-link h5 {
+  font-weight: 300;
+}
+
+.mobile-site-link h5:hover {
+  font-weight: 700;
+}

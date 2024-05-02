@@ -1,0 +1,24 @@
+.app[data-theme="light"] {
+  --mainbg: var(--lightblue);
+  --maincolor: var(--black);
+}
+
+.app[data-theme="dark"] {
+  --mainbg: var(--black);
+  --servicesbg: var(--turquoise);
+  --secondarybg: var(--lightblack);
+  --maincolor: var(--white);
+}
+
+.app {
+  background: var(--mainbg);
+  font-family: var(--mainfont);
+  border: 1px solid transparent; /*preserves appsize --- not sure why, lol */
+}
+
+.app-content {
+  margin-top: 22.5rem;
+  position: relative;
+  color: var(--maincolor);
+  /* min-height: 100vh; */
+}

@@ -1,0 +1,21 @@
+.mywork-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 144rem;
+  margin: 0 auto;
+  padding: 0rem 6rem;
+}
+
+@media screen and (max-width: 950px) {
+  .mywork-container {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .mywork-container {
+    padding: 0rem 2rem;
+  }
+}

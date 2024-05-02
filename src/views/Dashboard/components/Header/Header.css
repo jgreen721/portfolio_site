@@ -1,0 +1,51 @@
+.header {
+  width: 100%;
+  max-width: 144rem;
+  margin: 0 auto;
+  /* border: 2px solid red; */
+}
+
+.header-content-card {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  /* border: 5px solid green; */
+  background: var(--secondarybg);
+}
+
+.header-column {
+  flex: 1;
+  /* border: 3px solid red; */
+}
+
+/* .img-column {
+  background-image: url("./programmer-hero-img.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
+
+.grey-block {
+  background: var(--mainbg);
+  padding: 0rem 0.5rem;
+}
+
+.header-column:first-child {
+  padding: 4rem;
+}
+
+.header-caption {
+  margin: 2rem 0;
+}
+
+.header-img {
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 950px) {
+  .header-content-card {
+    flex-direction: column;
+    justify-content: stretch;
+    text-align: center;
+  }
+}

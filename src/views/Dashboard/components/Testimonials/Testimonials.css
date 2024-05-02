@@ -1,0 +1,38 @@
+.testimonials-container {
+  max-width: 144rem;
+  margin: 0 auto;
+}
+
+.testimonial-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 5rem 0;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+  margin-top: 2.5rem;
+}
+
+.testimonial-card {
+  padding: 3rem;
+  flex: 1;
+  /* border: 2px solid black; */
+  box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.3);
+}
+
+.testimonial-blurb {
+  line-height: 3.2rem;
+  margin: 2rem 0;
+}
+
+@media screen and (max-width: 950px) {
+  .testimonials {
+    flex-direction: column;
+    padding: 0 var(--mainPaddingX);
+  }
+}

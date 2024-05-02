@@ -2,8 +2,7 @@
   background: var(--servicesbg);
   /* border: 3px solid red; */
   width: 100%;
-  padding: 4rem 0;
-  margin: 10rem 0;
+  padding: 10rem 0;
 }
 
 .services-content {
@@ -36,6 +35,14 @@
   justify-content: space-between;
   flex-direction: column;
   /* border: 2px solid green; */
+}
+
+.service-item:first-child {
+  transform: translateX(-100vw);
+}
+
+.service-item:nth-child(2) {
+  transform: translateX(100vw);
 }
 
 .service-title {

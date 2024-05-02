@@ -6,11 +6,11 @@ const AnswerBoard = ({answer,hasHovered}) => {
   return (
     <div className="faq-answer-area">
         <div className="no-answer-div">
-            <div className={hasHovered ? "no-answer-column slide-left" : "no-answer-column"}>
+            <div className={hasHovered ? "no-answer-column slide-to-left" : "no-answer-column"}>
                 <PiQuestionThin style={{fontSize:'5rem'}} />
                 <PiQuestionThin style={{fontSize:'5rem'}} />
             </div>
-            <div className={hasHovered ? "no-answer-column slide-right" : "no-answer-column"}>
+            <div className={hasHovered ? "no-answer-column slide-to-right" : "no-answer-column"}>
                 <PiQuestionThin style={{fontSize:'5rem'}} />
                 <PiQuestionThin style={{fontSize:'5rem'}} />
             </div>

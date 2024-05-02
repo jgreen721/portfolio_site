@@ -43,21 +43,21 @@
   justify-content: center;
 }
 
-.slide-left {
-  animation: slideleft 1s forwards;
+.slide-to-left {
+  animation: slidetoleft 1s forwards;
 }
 
-@keyframes slideleft {
+@keyframes slidetoleft {
   100% {
     transform: translateX(-100vw);
   }
 }
 
-.slide-right {
-  animation: slideright 1s forwards;
+.slide-to-right {
+  animation: slidetoright 1s forwards;
 }
 
-@keyframes slideright {
+@keyframes slidetoright {
   100% {
     transform: translateX(100vw);
   }

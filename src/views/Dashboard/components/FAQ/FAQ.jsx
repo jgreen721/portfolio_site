@@ -26,7 +26,10 @@ const FAQ = () => {
       <div className="faq-content-row">
         <div className="faq-column faq-content-column">
           <div className="faq-content-header">
-          <h2>Frequently Asked Questions</h2>
+            <div>
+          <h2>FAQ</h2>
+          <h4>uestions</h4>
+          </div>
           <div className="faq-caption-row">
             <p>Couldn't find what you're looking for?</p>
             <Link className="contact-link blue" to="/contact">Email Me</Link>

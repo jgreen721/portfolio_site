@@ -5,7 +5,13 @@
   border-radius: 0.5rem;
   border: none;
   display: inline-block;
+  transition: 0.2s ease;
+  /* cursor: pointer; */
   /* width: 200px;
   height: 40px;
   border: 2px solid green; */
+}
+
+.contact-link-btn:hover {
+  transform: scale(1.1, 0.9);
 }

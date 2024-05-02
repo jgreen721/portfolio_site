@@ -1,0 +1,35 @@
+.logo-div {
+  position: relative;
+  width: 85px;
+  /* border: 2px solid black; */
+  height: 75px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.logo-text {
+  position: absolute;
+}
+
+.logo-h1 {
+  line-height: 5rem;
+  text-shadow: 1px 1px 1px var(--mainbg);
+}
+
+.logo-h1-one {
+  transform: translateX(-0.65rem) translateY(-1.5rem) scale(1, 0.75);
+  font-size: 7rem;
+}
+.logo-h1-two {
+  font-size: 5rem;
+}
+
+.logo-dev {
+  transform: translate(1.5rem, -1.75rem);
+  position: absolute;
+  z-index: 1000;
+  color: var(--turquoise);
+  font-weight: 700;
+  text-shadow: 0px 0px 1px var(--mainbg);
+}

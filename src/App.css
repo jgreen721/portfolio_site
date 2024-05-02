@@ -23,3 +23,40 @@
 }
 
 /* animations */
+
+.slide-right {
+  animation: slideright 1s forwards;
+}
+
+@keyframes slideright {
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.slide-left {
+  animation: slideleft 1s forwards;
+}
+
+@keyframes slideleft {
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.rise-up-fade-in {
+  animation: riseupfadein 1.2s forwards;
+}
+
+@keyframes riseupfadein {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 100%;
+  }
+}

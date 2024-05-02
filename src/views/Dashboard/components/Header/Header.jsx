@@ -22,6 +22,7 @@ const Header = () => {
             <motion.div initial={initialFadeIn} animate={animateFadeIn} transition={{delay:.5,duration:1.5}} className="header-column img-column">
                 <img className="header-img" src={heroImg} alt="" />
 
+
             </motion.div>
         </div>
        

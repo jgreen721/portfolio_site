@@ -1,14 +1,16 @@
 import React from 'react'
 import { FaLinkedin } from "react-icons/fa";
+import { SiteLinks } from '../../reusables';
 import "./Footer.css"
 
 const Footer = () => {
     const links = [
-        {id:1,name:"Home"},
-        {id:2,name:"Services"},
-        {id:3,name:"Porfolio"},
-        {id:4,name:"About"},
-        {id:5,name:"FAQ"},
+        {id:1,name:"Home",link:"/"},
+        {id:2,name:"Services",link:"#services"},
+        {id:3,name:"Portfolio",link:"/portfolio"},
+        {id:4,name:"About",link:"#about"},
+        {id:5,name:"FAQ",link:"#faq"},
+        // {id:6,name:"Contact"},
     ]
   return (
     <footer className="footer">
@@ -22,17 +24,11 @@ const Footer = () => {
             </div>
         </div>
         <div className="footer-column">
-        <ul className="nav-links">
-            {links.map(link=>(
-                <li key={link.id} className="nav-link-item">
-                    <a className="nav-link" href="#">{link.name}</a>
-                </li>
-            ))}
-        </ul>
+<SiteLinks listName="footer-links" linkName="footer-link" />
         </div>
-        <div className="footer-column">
+        <a href="https://www.linkedin.com/in/justin-green-2484513b/" target="_blank" className="linkedin-btn">
             <h3><FaLinkedin/></h3>
-        </div>
+        </a>
         </div>
         <h5 className="footer-caption">&copy; All Rights Reserved BratzAppz/JGDev 2024</h5>
     </footer>

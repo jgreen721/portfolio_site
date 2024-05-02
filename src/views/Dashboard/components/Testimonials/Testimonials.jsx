@@ -1,16 +1,48 @@
-import React from 'react'
+import React, {useEffect, useRef,useState} from 'react'
+import { AnimateContent } from '../../../../reusables';
 import { useAppContext } from '../../../../context/AppContext'
+import { useInView } from "react-intersection-observer";
+
 import "./Testimonials.css"
 
 
 const Testimonials = () => {
+  const [elementInView, setElementInView] = useState(false)
+  const elRef = useRef()
+
   const {testimonials} = useAppContext();
+
+  const { ref, inView, entry } = useInView({
+    /* Optional options */
+    threshold: 0,
+  });
+
+
+
+  // useEffect(()=>{
+  //   if(inView){
+  //     console.log('addclasses-testimonials',entry);
+  //     entry.target.classList.add("rise-up-fade-in")
+  //   }
+  // },[inView])
+
+
+  useEffect(()=>{
+    if(elementInView){
+      console.log('addclasses-testimonials');
+      elRef.current.classList.add("rise-up-fade-in")
+    }
+  },[elementInView])
+
 
 
 
   return (
     <div className="testimonials-container">
-      <div className="testimonial-content">
+    <AnimateContent setElementInView={setElementInView}>
+
+      {/* <div ref={ref} className="testimonial-content"> */}
+      <div ref={elRef} className="testimonial-content">
       <h1>Testimonials</h1>
       <ul className="testimonials">
         {testimonials.map(t=>(
@@ -22,6 +54,7 @@ const Testimonials = () => {
         ))}
       </ul>
       </div>
+      </AnimateContent>
     </div>
   )
 }

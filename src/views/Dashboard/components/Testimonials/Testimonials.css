@@ -7,7 +7,26 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 5rem 0;
+  /* margin: 5rem 0; */
+  padding: 4rem var(--main_padding_x);
+  transform: translateY(75vh);
+  opacity: 0;
+}
+
+.testimonial-content h1 {
+  position: relative;
+  /* border: 2px solid red; */
+}
+
+.testimonial-content h1::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 15px;
+  left: 0;
+  bottom: -0.25rem;
+  background: var(--turquoise);
+  clip-path: polygon(0 53%, 100% 19%, 100% 31%, 0% 100%);
 }
 
 .testimonials {

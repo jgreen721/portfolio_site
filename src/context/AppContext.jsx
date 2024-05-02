@@ -16,7 +16,7 @@ export const AppProvider = ({ children }) => {
     async function fetchData(url){
       let response = await fetch(url);
       let {data} = await response.json();
-      console.log("response",data);
+      // console.log("response",data);
       return data;
     }
 

@@ -6,7 +6,7 @@ html {
 }
 
 :root {
-  --mainPaddingX: 16.5rem;
+  --main_padding_x: 6rem;
   --lightblue: rgb(235, 240, 245);
   --white: rgb(255, 255, 255);
   --black: rgb(20, 15, 15);
@@ -111,7 +111,7 @@ p {
 
 @media screen and (max-width: 650px) {
   * {
-    --mainPaddingX: 2.5rem;
+    --main_padding_x: 2.5rem;
   }
 
   h1 {

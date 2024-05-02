@@ -53,3 +53,13 @@
     flex-wrap: wrap;
   }
 }
+
+@media screen and (max-width: 550px) {
+  .nav-links {
+    display: none;
+  }
+
+  .footer-caption {
+    font-size: 1.2rem;
+  }
+}

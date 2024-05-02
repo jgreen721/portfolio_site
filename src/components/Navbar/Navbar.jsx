@@ -4,6 +4,8 @@ import { ContactBtn } from '../../reusables'
 import { Squash as Hamburger } from 'hamburger-react'
 import MobileMenu from "./MobileMenu/MobileMenu"
 import { useAppContext } from '../../context/AppContext'
+import {motion} from "framer-motion"
+import { initialHorizontalScale,animateScaleHorizontally } from '../../animations'
 import "./Navbar.css"
 
 
@@ -19,7 +21,7 @@ const Navbar = () => {
     const {showMobile,toggleMobileMenu} = useAppContext();
   return (
     <nav className="nav">
-        <div className="nav-content">
+        <motion.div initial={initialHorizontalScale} animate={animateScaleHorizontally} transition={{type:"spring"}} className="nav-content">
         <div className="nav-content-row">
             <div className="nav-overlay"></div>
             <div className="nav-filter"></div>
@@ -73,7 +75,7 @@ const Navbar = () => {
         </div>
         <MobileMenu  showMobile={showMobile} links={links}/>
     </div>
-    </div>
+    </motion.div>
 </nav>
   )
 }

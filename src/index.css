@@ -99,14 +99,38 @@ p {
   white-space: nowrap;
 }
 
-/* @media screen and (max-width: 1150px) {
+/* @media screen and (max-width: 950px) {
   * {
     --mainPaddingX: 6.5rem;
   }
-}
+} */
 
 @media screen and (max-width: 650px) {
   * {
     --mainPaddingX: 2.5rem;
   }
-} */
+
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  h2 {
+    font-size: 3.2rem;
+  }
+
+  h3 {
+    font-size: 2.7rem;
+  }
+
+  h4 {
+    font-size: 2rem;
+  }
+
+  h5 {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 1.3rem;
+  }
+}

@@ -3,7 +3,7 @@
   width: 100%;
   top: 2.5%;
   left: 0%;
-  z-index: 750;
+  z-index: 1000;
   /* border: 2px solid black; */
 }
 
@@ -21,13 +21,13 @@
   border: 2.5px solid var(--mainColor);
   border-radius: 0.5rem;
   position: relative;
+  transform-origin: center;
 }
 
 .nav-overlay {
   position: absolute;
   inset: 0;
   opacity: 70%;
-
   background: var(--secondarybg);
 }
 

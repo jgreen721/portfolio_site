@@ -15,14 +15,8 @@
 
 .header-column {
   flex: 1;
-  /* border: 3px solid red; */
+  overflow: hidden;
 }
-
-/* .img-column {
-  background-image: url("./programmer-hero-img.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-} */
 
 .grey-block {
   background: var(--mainbg);

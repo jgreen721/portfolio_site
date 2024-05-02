@@ -10,6 +10,9 @@ const SampleItem = ({sample}) => {
 
   return (
   <li className="work-sample-item">
+    <div className="work-sample-item-column sample-img-column mobile-sample-column">
+      <img className="sample-img" src={sample.img} alt="" />
+    </div>
     <div className="work-sample-item-column sample-info-column">
       <h3>{sample.name}</h3>
       <h5 className="sample-blurb mid-thin">{sample.blurb}</h5>
@@ -25,7 +28,7 @@ const SampleItem = ({sample}) => {
         <button  onClick={()=>handleSiteView(sample)} className="view-btn site-item-link">View</button>
       </div>
     </div>
-    <div className="work-sample-item-column sample-img-column">
+    <div className="work-sample-item-column sample-img-column desktop-sample-column">
       <img className="sample-img" src={sample.img} alt="" />
     </div>
   </li>

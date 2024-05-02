@@ -62,6 +62,10 @@
   font-weight: 600;
 }
 
+.mobile-sample-column {
+  display: none;
+}
+
 @media screen and (max-width: 950px) {
   .work-sample-item {
     flex-direction: column;
@@ -72,5 +76,14 @@
     text-align: center;
     align-items: center;
     margin: 4rem 0;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .desktop-sample-column {
+    display: none;
+  }
+  .mobile-sample-column {
+    display: block;
   }
 }

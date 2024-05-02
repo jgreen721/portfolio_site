@@ -95,6 +95,10 @@ p {
   color: yellow;
 }
 
+.vue-green {
+  color: rgb(10, 228, 10);
+}
+
 .no-wrap {
   white-space: nowrap;
 }

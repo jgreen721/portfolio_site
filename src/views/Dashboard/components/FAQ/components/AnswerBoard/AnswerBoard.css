@@ -1,0 +1,64 @@
+.faq-answer-area {
+  /* border: 3px solid blue; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background: var(--secondarybg);
+  border-radius: 2rem;
+  margin: 1rem 0;
+  height: 200px;
+}
+
+.answer-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  padding: 1.5rem 3rem;
+}
+
+.animate-answer {
+  opacity: 0;
+  animation: animateanswer 1s 1s forwards;
+}
+
+@keyframes animateanswer {
+  0% {
+    opacity: 1;
+    filter: blur(20px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
+
+.no-answer-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-left {
+  animation: slideleft 1s forwards;
+}
+
+@keyframes slideleft {
+  100% {
+    transform: translateX(-100vw);
+  }
+}
+
+.slide-right {
+  animation: slideright 1s forwards;
+}
+
+@keyframes slideright {
+  100% {
+    transform: translateX(100vw);
+  }
+}

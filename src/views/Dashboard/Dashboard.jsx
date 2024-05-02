@@ -11,7 +11,7 @@ const Dashboard = () => {
       <Services/>
       <MyWork/>
       <Testimonials/> 
-      <About/>
+      {/* <About/> */}
       <FAQ/>
       {/* </div> */}
     </div>

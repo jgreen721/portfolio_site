@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
 import { useAppContext } from '../../../../context/AppContext'
 import {Link} from "react-router-dom"
+import {AnswerBoard} from "./components"
 import "./FAQ.css"
-import { PiQuestionThin } from "react-icons/pi";
 
 
 
@@ -25,7 +25,7 @@ const FAQ = () => {
     <div id="faq" className="faq-container">
       <div className="faq-content-row">
         <div className="faq-column faq-content-column">
-          <div>
+          <div className="faq-content-header">
           <h2>Frequently Asked Questions</h2>
           <div className="faq-caption-row">
             <p>Couldn't find what you're looking for?</p>
@@ -33,39 +33,8 @@ const FAQ = () => {
   
           </div>
           </div>
-          <div className="faq-answer-area">
-            {/* {answer ? 
-             <div className="answer-div">
-                <h5>{answer}</h5>
-            </div>
-            :
-              <div className="no-answer-div">
-              <PiQuestionThin style={{fontSize:'5rem'}} />
-              <PiQuestionThin style={{fontSize:'5rem'}} />
-              <PiQuestionThin style={{fontSize:'5rem'}} />
-              <PiQuestionThin style={{fontSize:'5rem'}} />
-
-              </div>
-              } */}
-
-
-              <div className="no-answer-div">
-                <div className={hasHovered ? "no-answer-column slide-left" : "no-answer-column"}>
-                <PiQuestionThin style={{fontSize:'5rem'}} />
-                <PiQuestionThin style={{fontSize:'5rem'}} />
-                </div>
-                <div className={hasHovered ? "no-answer-column slide-right" : "no-answer-column"}>
-
-                <PiQuestionThin style={{fontSize:'5rem'}} />
-                <PiQuestionThin style={{fontSize:'5rem'}} />
-                </div>
-                <div className={hasHovered ? "answer-div scale-answer" :  "answer-div"}>
-                    <h5>{answer}</h5>
-                </div>
-            </div>
-             
-            </div>
-        </div>
+<AnswerBoard answer={answer} hasHovered={hasHovered}/>
+</div>
         <div className="faq-column">
          <ul className="faqs-list">
            {faqitems.map(faq=>(

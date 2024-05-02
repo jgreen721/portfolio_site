@@ -1,8 +1,10 @@
 import React from 'react'
 import {Link} from "react-router-dom"
+import {useAppContext} from "../../../context/AppContext"
 import "./MobileMenu.css";
 
 const MobileMenu = ({links,showMobile}) => {
+  const {toggleMobileMenu} = useAppContext();
   return (
     <div className={showMobile ? "mobile-menu" : "hide-mobile-menu mobile-menu"}>
            <ul className="mobile-links">
@@ -11,6 +13,7 @@ const MobileMenu = ({links,showMobile}) => {
                 <li 
                     onClick={(e) => {
                     // e.preventDefault();
+                    toggleMobileMenu()
                     window.history.replaceState({}, document.title, "/"); // Reset URL to "/"
                   }}
                     key={link.id} 
@@ -20,7 +23,7 @@ const MobileMenu = ({links,showMobile}) => {
                     </a>
                 </li>
                 :
-                <Link key={link.id} className="nav-link-item mobile-site-link" to={link.link}>
+                <Link onClick={toggleMobileMenu} key={link.id} className="nav-link-item mobile-site-link" to={link.link}>
                        <h5> {link.name} </h5>
                 </Link>
             ))}

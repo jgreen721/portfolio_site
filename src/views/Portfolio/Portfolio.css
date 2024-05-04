@@ -1,0 +1,6 @@
+.portfolio-container {
+  position: relative;
+  /* border: 2px solid red; */
+  max-width: 144rem;
+  margin: 0 auto;
+}

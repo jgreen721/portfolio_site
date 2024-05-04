@@ -1,15 +1,26 @@
-import React from 'react'
+import React, {useEffect, useState, useRef} from 'react'
+import {AnimateContent} from "../../../../../../reusables"
 import { useAppContext } from '../../../../../../context/AppContext';
 import "./SampleItem.css";
 
 
 const SampleItem = ({sample}) => {
     const {handleSiteView} = useAppContext();
+    const [elementInView,setElementInView] = useState(false);
+    const elRef = useRef();
 
 
+    useEffect(()=>{
+      if(elementInView){
+        console.log('addclasses-testimonials');
+        elRef.current.classList.add(sample.animatedClassName)
+      }
+    },[elementInView])
 
   return (
-  <li className="work-sample-item">
+    <AnimateContent setElementInView={setElementInView}>
+
+  <li ref={elRef} className={`work-sample-item ${sample.preAnimatedClass}`}>
     <div className="work-sample-item-column sample-img-column mobile-sample-column">
       <img className="sample-img" src={sample.img} alt="" />
     </div>
@@ -32,6 +43,7 @@ const SampleItem = ({sample}) => {
       <img className="sample-img" src={sample.img} alt="" />
     </div>
   </li>
+  </AnimateContent>
   )
 }
 

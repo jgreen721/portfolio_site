@@ -5,6 +5,14 @@
   gap: 2rem;
 }
 
+.offset-left {
+  transform: translateX(-100vw);
+}
+
+.offset-right {
+  transform: translateX(100vw);
+}
+
 .technology-list {
   display: flex;
   align-items: center;

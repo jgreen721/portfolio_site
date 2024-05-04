@@ -8,7 +8,7 @@
   margin: 0 auto;
   padding: 6rem var(--main_padding_x);
   gap: 4rem;
-  /* border: 2px solid red; */
+  filter: blur(200px);
 }
 
 .faq-column {

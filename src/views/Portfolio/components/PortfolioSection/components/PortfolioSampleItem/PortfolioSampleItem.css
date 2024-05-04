@@ -1,0 +1,16 @@
+.portfolio-sample-item {
+  box-shadow: 1px 1px 5px var(--turquoise);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.portfolio-sample-img {
+  height: 150px;
+  width: 150px;
+  border-radius: 0.5rem;
+}
+
+.ux-row {
+  display: flex;
+}

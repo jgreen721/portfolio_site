@@ -64,3 +64,22 @@
     display: none;
   }
 }
+
+/* Mobile Menu Link Styling Fx */
+
+.mobile-site-link {
+  color: var(--maincolor);
+  cursor: pointer;
+  text-shadow: 1px 1px 1px var(--mainbg);
+  text-transform: uppercase;
+  position: relative;
+  margin: 1.5rem 0;
+}
+
+.mobile-site-link h5 {
+  font-weight: 300;
+}
+
+.mobile-site-link h5:hover {
+  font-weight: 700;
+}

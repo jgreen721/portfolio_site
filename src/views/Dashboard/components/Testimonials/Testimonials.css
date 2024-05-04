@@ -44,6 +44,28 @@
   box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.3);
 }
 
+.testimonial-card * {
+  position: relative;
+  z-index: 5;
+}
+
+.testimonial-card:nth-child(2) {
+  position: relative;
+}
+
+.testimonial-card:nth-child(2)::after {
+  content: "";
+  width: 85%;
+  height: 100%;
+  background: var(--turquoise);
+  position: absolute;
+  top: 0;
+  right: 0;
+  clip-path: polygon(67% 0, 100% 0%, 100% 100%, 0% 100%);
+  filter: blur(10px);
+  opacity: 75%;
+}
+
 .testimonial-blurb {
   line-height: 3.2rem;
   margin: 2rem 0;

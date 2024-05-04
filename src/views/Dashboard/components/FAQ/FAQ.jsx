@@ -1,4 +1,5 @@
-import React, {useState} from 'react'
+import React, {useState,useEffect,useRef} from 'react'
+import { AnimateContent } from '../../../../reusables'
 import { useAppContext } from '../../../../context/AppContext'
 import {Link} from "react-router-dom"
 import {AnswerBoard} from "./components"
@@ -11,6 +12,17 @@ const FAQ = () => {
   const {faqitems} = useAppContext();
   const [answer,setAnswer] = useState("");
   const [hasHovered,setHasHovered] = useState(false);
+  // const {handleSiteView} = useAppContext();
+  const [elementInView,setElementInView] = useState(false);
+  const elRef = useRef();
+
+
+  useEffect(()=>{
+    if(elementInView){
+      console.log('addclasses-testimonials');
+      elRef.current.classList.add("clear-blur")
+    }
+  },[elementInView])
 
 
   const handleSetAnswer = (faq)=>{
@@ -23,7 +35,8 @@ const FAQ = () => {
   }
   return (
     <div id="faq" className="faq-container">
-      <div className="faq-content-row">
+      <AnimateContent setElementInView={setElementInView}>
+      <div ref={elRef} className="faq-content-row">
         <div className="faq-column faq-content-column">
           <div className="faq-content-header">
             <div>
@@ -55,6 +68,7 @@ const FAQ = () => {
          </ul>
         </div>
       </div>
+      </AnimateContent>
     </div>
   )
 }

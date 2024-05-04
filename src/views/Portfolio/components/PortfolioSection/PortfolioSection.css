@@ -1,0 +1,16 @@
+.portfolio-section {
+  margin: 5rem 0;
+  padding: 0rem var(--main_padding_x);
+}
+
+.portfolio-section-header {
+  width: clamp(45%, 400px, 90%);
+}
+
+.portfolio-section-samples {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}

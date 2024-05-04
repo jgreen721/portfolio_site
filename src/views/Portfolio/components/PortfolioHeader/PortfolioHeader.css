@@ -1,0 +1,33 @@
+.portfolio-header {
+  margin: 3.5rem 0;
+}
+
+.header-h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.absolute-header-shadow {
+  position: absolute;
+  filter: blur(2.5px);
+}
+
+.text-reflect {
+  position: relative;
+}
+
+.text-reflect::after {
+  content: "PoRTFOliO";
+  position: absolute;
+  font-size: 7rem;
+  letter-spacing: 0.35rem;
+  top: 4rem;
+  transform: rotateX(180deg);
+  filter: blur(5px);
+  opacity: 65%;
+  background-image: linear-gradient(white, white, transparent, transparent);
+  background-clip: text;
+  color: transparent;
+}

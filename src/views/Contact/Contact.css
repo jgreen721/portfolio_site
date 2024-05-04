@@ -47,6 +47,26 @@
   font-family: var(--secondaryfont);
   font-size: 1.6rem;
   border-radius: 0.5rem;
+  resize: none;
+}
+
+.contact-me-btn {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  font-weight: 700;
+  background: var(--turquoise);
+  font-size: 1.7rem;
+  font-weight: 200;
+  cursor: pointer;
+  border: none;
+  transition: 0.2s ease;
+}
+
+.contact-me-btn:hover {
+  transform: scale(0.9, 1.1);
 }
 
 @media screen and (max-width: 950px) {

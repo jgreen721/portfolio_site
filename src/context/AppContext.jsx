@@ -1,5 +1,5 @@
 import React,{ useState, createContext, useContext, useEffect } from "react";
-
+import {data } from "../data.jsx"
 const AppContext = createContext();
 
 export const useAppContext = () => useContext(AppContext);
@@ -10,6 +10,8 @@ export const AppProvider = ({ children }) => {
   const [site,setSite] = useState(null);
   const [faqitems,setFaqItems] = useState([]);
   const [testimonials,setTestimonials] = useState([]);
+  const [portfolioData, setPortfolioData] = useState(data);
+
 
 
   useEffect(()=>{
@@ -55,6 +57,7 @@ export const AppProvider = ({ children }) => {
     siteView,
     site,
     faqitems,
+    portfolioData,
     testimonials,
     showMobile,
     handleSiteView,

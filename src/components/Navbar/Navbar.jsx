@@ -36,7 +36,7 @@ const Navbar = () => {
          </div>
          <div className="mobile-nav-column">
              <button onClick={toggleMobileMenu} className="burger-btn">
-            <Hamburger toggled={showMobile}  color="white"/>
+            <Hamburger className="burger-icon" toggled={showMobile}  color="white"/>
             </button>
 
          </div>

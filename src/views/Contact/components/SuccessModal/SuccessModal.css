@@ -1,0 +1,26 @@
+.success-div {
+  gap: 1rem;
+}
+
+.success-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transform-origin: center;
+  transform: scale(0);
+  transition: 0.2s;
+}
+
+.show-success-alert {
+  transform: scale(1);
+  transition: 0.2s;
+}
+
+.check-icon {
+  color: green;
+  font-size: 4rem;
+}
+
+.success-text {
+  color: green;
+}

@@ -103,6 +103,11 @@ p {
   white-space: nowrap;
 }
 
+.transparent-btn {
+  background: transparent;
+  border: none;
+}
+
 /* @media screen and (max-width: 950px) {
   * {
     --mainPaddingX: 6.5rem;

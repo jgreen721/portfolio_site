@@ -25,7 +25,17 @@
 
 /* animations */
 
-.slide-right {
+.animate-to-center {
+  animation: animateToCenter 1s forwards;
+}
+
+@keyframes animateToCenter {
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* .slide-right {
   animation: slideright 1s forwards;
 }
 
@@ -43,7 +53,7 @@
   100% {
     transform: translateX(0);
   }
-}
+} */
 
 .rise-up-fade-in {
   animation: riseupfadein 1.2s forwards;
@@ -69,5 +79,13 @@
 @keyframes clearblur {
   100% {
     filter: blur(0px);
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .app-content {
+    margin-top: 15.5rem;
+    position: relative;
+    color: var(--maincolor);
   }
 }

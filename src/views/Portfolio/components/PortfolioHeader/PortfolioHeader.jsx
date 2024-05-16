@@ -4,17 +4,16 @@ import "./PortfolioHeader.css"
 const PortfolioHeader = () => {
   return (
     <div className="portfolio-header">
-        <div className="header-h1 text-reflect">
-            <h1>P</h1>
-            <h1>o</h1>
-            <h1>R</h1>
-            <h1>T</h1>
-            <h1>F</h1>
-            <h1>O</h1>
-            <h1>l</h1>
-            <h1>i</h1>
-            <h1>O</h1>
-            <div className="absolute-header-shadow"><h1>PoRTFOliO</h1></div>
+        <div className="header-h1-row text-reflect">
+            <h1 style={{'--i':'.1s'}}>P</h1>
+            <h1 style={{'--i':'.2s'}}>o</h1>
+            <h1 style={{'--i':'.3s'}}>R</h1>
+            <h1 style={{'--i':'.4s'}}>T</h1>
+            <h1 style={{'--i':'.5s'}}>F</h1>
+            <h1 style={{'--i':'.6s'}}>O</h1>
+            <h1 style={{'--i':'.7s'}}>l</h1>
+            <h1 style={{'--i':'.8s'}}>i</h1>
+            <h1 style={{'--i':'.9s'}}>O</h1>
         </div>
     </div>
   )

@@ -1,0 +1,24 @@
+.user-action-row {
+  margin: 2rem 0rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* .actions-column::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 0.85rem;
+  opacity: 25%;
+  filter: blur(10px);
+  background: var(--turquoise);
+} */
+
+@media screen and (max-width: 650px) {
+  .users-actions-row {
+    margin: 0 2rem;
+    border: 3px solid red;
+  }
+}

@@ -1,0 +1,22 @@
+.comment-item {
+  margin: 2rem 0rem;
+  background: rgb(235, 235, 235);
+  padding: 2rem;
+  font-size: 2rem;
+  color: black;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.comment-from {
+  margin-left: 3rem;
+}
+
+.comment-divider {
+  width: 2px;
+  height: 50px;
+  background: black;
+  filter: blur(1px);
+}

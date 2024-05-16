@@ -27,7 +27,7 @@ const Footer = () => {
 <SiteLinks listName="footer-links" linkName="footer-link" />
         </div>
         <a href="https://www.linkedin.com/in/justin-green-2484513b/" target="_blank" className="linkedin-btn">
-            <h3><FaLinkedin/></h3>
+            <h3><FaLinkedin className="blue"/></h3>
         </a>
         </div>
         <h5 className="footer-caption">&copy; All Rights Reserved BratzAppz/JGDev 2024</h5>

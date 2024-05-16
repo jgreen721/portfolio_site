@@ -1,19 +1,21 @@
 import React from 'react'
-import { useAppContext } from '../../context/AppContext'
 import { PortfolioHeader,PortfolioSection } from './components'
+import { useAppContext } from '../../context/AppContext'
+import { SiteView } from '../../components'
 import "./Portfolio.css"
 
 const Portfolio = () => {
-  const {portfolioData} = useAppContext();
-  console.log(portfolioData)
+  const {categorySections} = useAppContext();
+
   return (
     <div className="portfolio-container">
       <PortfolioHeader/>
       <ul className="portfolio-sections">
-        {portfolioData.map(p=>(
-          <PortfolioSection key={p.id} portfolioSection={p}/>
-        ))}
+          {Object.keys(categorySections).map((p,idx)=>(
+          <PortfolioSection key={categorySections[p].id} preAnimatedState={idx%2 == 0 ? "offset-left" : "offset-right"} portfolioSection={categorySections[p]}/>
+          ))}
       </ul>
+      <SiteView/>
     </div>
   )
 }

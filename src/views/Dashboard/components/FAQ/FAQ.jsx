@@ -40,8 +40,7 @@ const FAQ = () => {
         <div className="faq-column faq-content-column">
           <div className="faq-content-header">
             <div>
-          <h2>FAQ</h2>
-          <h4>uestions</h4>
+          <h2>FA<span className="blue">Q</span></h2>
           </div>
           <div className="faq-caption-row">
             <p>Couldn't find what you're looking for?</p>

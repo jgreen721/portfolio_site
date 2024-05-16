@@ -13,7 +13,7 @@ const AnimateContent = ({children,setElementInView}) => {
     
         if(inView){
             setElementInView(true);
-            console.log('animate element from its component')
+            // console.log('animate element from its component')
         }
       },[inView])
   return (

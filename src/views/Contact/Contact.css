@@ -1,53 +1,25 @@
 .contact-container {
   display: flex;
-  align-items: center;
   max-width: 144rem;
   margin: 0 auto;
 }
 
 .contact-column {
   flex: 1;
-  /* border: 2px solid white; */
   padding: 3rem;
-  /* padding: 2rem; */
+  position: relative;
+  /* border: 2px solid green; */
+  /* border: 2px solid white; */
 }
 
 .contact-header {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
-}
-
-.form-div {
-  width: 100%;
-  margin: 2rem 0;
-}
-
-.form-control {
-  width: 100%;
-  padding: 1rem 2rem;
-  outline: none;
-  border: none;
-  font-family: var(--secondaryfont);
-  font-size: 1.6rem;
-  border-radius: 0.5rem;
-}
-
-.contact-div {
-  height: 300px;
-}
-
-.contact-form {
-  width: 100%;
+  flex-direction: column;
   height: 100%;
-  outline: none;
-  border: none;
-  padding: 2rem;
-  font-family: var(--secondaryfont);
-  font-size: 1.6rem;
-  border-radius: 0.5rem;
-  resize: none;
+  z-index: 10;
+  position: relative;
 }
 
 .contact-me-btn {
@@ -58,8 +30,9 @@
   letter-spacing: 0.25rem;
   font-weight: 700;
   background: var(--turquoise);
+  font-family: var(--secondaryfont);
   font-size: 1.7rem;
-  font-weight: 200;
+  font-weight: 700;
   cursor: pointer;
   border: none;
   transition: 0.2s ease;
@@ -76,5 +49,12 @@
 
   .contact-column {
     width: 100%;
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .success-row {
+    flex-direction: column;
   }
 }

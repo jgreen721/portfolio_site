@@ -1,0 +1,26 @@
+.service-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-direction: column;
+  /* border: 2px solid green; */
+}
+
+.service-title {
+  margin-top: 3.5rem;
+  margin-bottom: 2rem;
+}
+
+.service-blurb {
+  /* border: 2px solid red; */
+  width: clamp(65%, 200px, 90%);
+  margin: 0 auto;
+}
+
+/* .service-img-div{} */
+
+.service-img {
+  width: 100%;
+  height: 100%;
+}

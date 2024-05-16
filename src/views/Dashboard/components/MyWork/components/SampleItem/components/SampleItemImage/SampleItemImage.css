@@ -1,0 +1,31 @@
+.sample-img-column {
+  position: relative;
+  height: 100%;
+  /* border: 2px solid green; */
+}
+
+.sample-img {
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+  min-height: 200px;
+  min-width: 200px;
+}
+
+.sample-reactions-row {
+  position: absolute;
+  bottom: 0;
+  left: 2rem;
+}
+
+.sample-reactions-row::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  background: black;
+  height: 50%;
+  top: 20%;
+  opacity: 50%;
+  filter: blur(5px);
+}

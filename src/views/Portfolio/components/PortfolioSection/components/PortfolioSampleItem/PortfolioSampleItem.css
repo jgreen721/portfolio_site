@@ -3,11 +3,30 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  /* border: 3px solid green; */
+  transition: 1.2s ease;
+  filter: blur(5px);
+  /* transform: scale(1.1); */
 }
 
+.focused {
+  transform: scale(1.4, 1);
+  /* border: 3px solid green; */
+  filter: blur(0px);
+}
+
+/* .distanced-item {
+  transform: scale(0.5);
+  transform: translateZ(-4px);
+  border: 2px solid green;
+} */
+
 .portfolio-sample-img {
-  height: 150px;
-  width: 150px;
+  height: 100%;
+  width: 100%;
   border-radius: 0.5rem;
 }
 

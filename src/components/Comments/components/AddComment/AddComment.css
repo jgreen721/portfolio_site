@@ -1,0 +1,60 @@
+.add-comment-form {
+  width: 100%;
+  z-index: 50;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background: var(--black);
+  /* border: 2px solid black; */
+}
+
+.add-comment-row,
+.add-btn-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.avatar-select {
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 1px var(--turquoise), 1px 1px 10px var(--turquoise);
+  font-size: 2rem;
+  outline: none;
+  cursor: pointer;
+}
+
+.comment-added-div {
+  overflow: hidden;
+}
+
+.add-comment-alert {
+  white-space: nowrap;
+  transition: 0.5s ease;
+}
+
+.hide-add-alert {
+  transform: translateY(10rem);
+}
+
+.add-comment-btn {
+  border-radius: 0.5rem;
+  border: none;
+  height: 40px;
+  width: 200px;
+  cursor: pointer;
+  outline: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-weight: 600;
+  background: var(--turquoise);
+  transition: 0.2s ease;
+}
+
+.add-comment-btn:hover {
+  transform: scale(0.95, 1.2);
+}

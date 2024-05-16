@@ -1,8 +1,11 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { Header,MyWork,Services,Testimonials,About,FAQ } from './components'
 import "./Dashboard.css"
 
 const Dashboard = () => {
+
+
+
 
   return (
     <div className="dashboard-container">
@@ -11,7 +14,7 @@ const Dashboard = () => {
       <Services/>
       <MyWork/>
       <Testimonials/> 
-      {/* <About/> */}
+      <About/>
       <FAQ/>
       {/* </div> */}
     </div>

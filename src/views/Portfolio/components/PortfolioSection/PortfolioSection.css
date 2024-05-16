@@ -1,16 +1,66 @@
 .portfolio-section {
   margin: 5rem 0;
   padding: 0rem var(--main_padding_x);
+  /* border: 3px solid blue; */
+}
+
+.offset-left {
+  transform: translateX(-100vw);
+}
+.offset-right {
+  transform: translateX(100vw);
 }
 
 .portfolio-section-header {
   width: clamp(45%, 400px, 90%);
 }
 
+.portfolio-section-h2 {
+  background-image: linear-gradient(to right, var(--turquoise), white, white);
+  background-clip: text;
+  color: transparent;
+}
+
 .portfolio-section-samples {
-  display: flex;
-  gap: 2rem;
-  align-items: center;
+  position: relative;
+  height: 400px;
+  overflow: hidden;
   margin: 2rem 0;
-  flex-wrap: wrap;
+
+  /* border: 2px solid red; */
+}
+
+.sample-action-row {
+  position: relative;
+  margin: 1rem 3rem;
+}
+
+.portfolio-actions-column {
+  /* shared between Desktop and Mobile Components */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 185px 29px 140px 75px;
+}
+
+.portfolio-actions-column::after {
+  content: "";
+  inset: 0;
+  position: absolute;
+  background: var(--turquoise);
+  opacity: 25%;
+  filter: blur(100px);
+}
+
+@media screen and (max-width: 650px) {
+  .portfolio-section-samples {
+    height: 250px;
+  }
+
+  .desktop-section {
+    display: none;
+  }
 }

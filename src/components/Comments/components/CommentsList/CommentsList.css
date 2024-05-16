@@ -1,0 +1,10 @@
+.comments-area {
+  width: 100%;
+  background: white;
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 0.5rem;
+
+  /* transform: translateY(200vh); */
+  transition: 0.2s ease;
+}

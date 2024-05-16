@@ -1,0 +1,26 @@
+.mywork-header {
+  text-align: start;
+  position: relative;
+}
+.mywork-header-bottom {
+  text-transform: uppercase;
+  letter-spacing: 2.5rem;
+  line-height: 2.25rem;
+  position: relative;
+}
+
+.mywork-header * {
+  position: relative;
+  z-index: 5;
+}
+
+.mywork-header::after {
+  content: "";
+  background: var(--turquoise);
+  position: absolute;
+  height: 60px;
+  width: 100%;
+  bottom: 0;
+  filter: blur(4px);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}

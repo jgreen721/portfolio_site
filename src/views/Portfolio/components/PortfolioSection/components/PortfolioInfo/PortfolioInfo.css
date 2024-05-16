@@ -1,0 +1,45 @@
+.portfolio-actions-info-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  position: relative;
+  margin: 0 2rem;
+  /* border: 2px solid red; */
+}
+
+.sample-info {
+  text-align: center;
+  width: clamp(400px, 45%, 75%);
+  position: relative;
+}
+
+.sample-description {
+  margin: 1.5rem 0;
+}
+
+.carousel-btn {
+  background: transparent;
+  padding: 1rem 2rem;
+  border-radius: 100px;
+  border: 2px solid var(--turquoise);
+  color: var(--turquoise);
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.carousel-btn:hover {
+  box-shadow: 1px 1px 5px var(--turquoise), 1px 1px 10px var(--turquoise),
+    1px 1px 20px var(--turquoise);
+  transform: scale(1.1, 0.9);
+  text-shadow: 1px 1px 1px var(--turquoise);
+}
+
+.portfolio-site-links-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2rem;
+  margin: 4rem 0;
+}

@@ -3,7 +3,7 @@ import { heroImg } from '../../../../const'
 import { ContactBtn } from '../../../../reusables'
 import "./Header.css"
 import {motion} from "framer-motion"
-import { initialSlideRight, animateSlideRight, initialHorizontalScale, animateScaleHorizontally, initialFadeIn, animateFadeIn } from '../../../../animations'
+import { initialSlideRight, animateSlideRight, initialFadeIn, animateFadeIn } from '../../../../animations'
 
 const Header = () => {
   return (

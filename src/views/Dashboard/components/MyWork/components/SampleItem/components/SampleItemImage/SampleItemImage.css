@@ -1,6 +1,7 @@
 .sample-img-column {
   position: relative;
   height: 100%;
+  max-height: 400px;
   /* border: 2px solid green; */
 }
 
@@ -10,6 +11,7 @@
   border-radius: 1rem;
   min-height: 200px;
   min-width: 200px;
+  /* max-height: 400px; */
 }
 
 .sample-reactions-row {

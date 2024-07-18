@@ -56,41 +56,7 @@ const PortfolioSection = ({portfolioSection,preAnimatedState}) => {
           setFocused((focused)=>focused = {...focused,showComments:false}) 
 
         }
-        // let updatedFocus = allSamples.filter(t=>t.title == focused.title)[0];
-        // setFocused(updatedFocus)
-        if(!commentsSample?.title){
-          // clean up -- fires unnecessarily for 3 sections though
-          // setFocused((focused)=>focused = {...focused,showComments:false})
-        }
-        else{
-          //make sure we update the right section since they all possess a focused
-          // if(focused?.title == commentSample.title)setFocused((focused)=>focused = {...focused,showComments:true})
-
-        }
-        // let updatedFocus = allSamples.filter(t=>t.title == focused.title)[0];
-        // setFocused(updatedFocus)
-        // if(commentSample?.title){
-        // temp = temp.map(t=>t.title == commentSample.title ? {...t,showComments:true} : {...t,showComments:false});
-        // }
-        // setSectionSamples(temp);
-
-        //loses single thread as comment responsibility from UI is reliant upon focused rather than the sample itself so, careful!!
-        // if(focused?.title == commentSample.title)setFocused((focused)=>focused = {...focused,showComments:true})
-        // if(!focused?.title != commentSample.title && focused.showComments)setFocused((focused)=>focused = {...focused,showComments:false})
-       
-      }
-    //   else{
-    //     console.log("this is what initially fires!! --- kinda confusing! :)")
-    // let tempSectionSamples = allSamples.filter(s=>s.category == portfolioSection.name.toLowerCase());
-    // let translatedSamples = calculate_offset(tempSectionSamples);
-    // setSectionSamples(translatedSamples)
-    // let focusedTemp = translatedSamples.filter(sample=>sample.translate == 25)[0];
-    // setFocused(focusedTemp);
-    //   }
-
-    // }
-
-  
+   }
   },[allSamples]);
 
   

@@ -1,7 +1,5 @@
 import React,{ useState, createContext, useContext, useEffect } from "react";
 import data  from "../serialized_data"
-import { db } from "../firebase.js";
-import {updateDoc,doc,collection,getDocs,query,where,addDoc} from "firebase/firestore"
 import { fetch_all_samples_from_firebase,fetch_all_comments_from_firebase } from "../helpers/fetch_firebase_samples";
 import { update_comments, update_reactions } from "../helpers/update_firebase";
 
@@ -27,30 +25,32 @@ export const AppProvider = ({ children }) => {
   useEffect(()=>{
 
     const serializeData = async()=>{
+      // console.log('serializeData fired!')
       let firebaseData = []
       let firebaseComments = []
           firebaseData = await fetch_all_samples_from_firebase();
           firebaseComments = await fetch_all_comments_from_firebase();
       // console.log("hydrating data -- fetching to firebase")
+      // console.lopg(firebaseData)
       
       if(firebaseData?.length > 0){
         //firebase is online
         data.samples = data.samples.map(s=>{
           let databaseSample = firebaseData.find(firebaseItem=>firebaseItem.sampleId == s.id);
+          if(databaseSample == undefined){
+          console.log("undefined stuffs!",databaseSample,s);
+          }
           let filteredComments = firebaseComments.filter(f=>f.sampleId == s.id)
           return {...s,likes:databaseSample.likes,dislikes:databaseSample.dislikes,love:databaseSample.love,comments:filteredComments.length,showComments:false}
+          // return s
         })
       
-  
-
-      }
+     }
       else{
         // firebase offline
         data.samples = data.samples.map(s=>({...s,likes:0,dislikes:0,love:0,comments:0,showComments:false}));
      
       }
- 
-
       setAllSamples(data.samples)
       setComments(firebaseComments)
     }

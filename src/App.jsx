@@ -2,13 +2,13 @@ import { Navbar,SiteView,Footer } from './components'
 import {Routes, Route} from "react-router-dom"
 import {Dashboard, Portfolio,Contact} from "./views"
 import './App.css'
-// import { populateFirebase } from './helpers/populate_firebase'
+import { populateFirebase,addNewSample } from './helpers/populate_firebase'
 
 function App() {
 
   return (
     <div data-theme="dark" className="app">
-      {/* <button onClick={populateFirebase}>PopulateFirebase</button> */}
+      <button onClick={addNewSample}>PopulateFirebase</button>
       <div className="app-content">
      <Navbar/>
     <SiteView/>

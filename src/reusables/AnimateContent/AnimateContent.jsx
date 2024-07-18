@@ -1,7 +1,7 @@
 import React, {useEffect, useRef} from 'react'
 import { useInView } from "react-intersection-observer";
 
-const AnimateContent = ({children,setElementInView}) => {
+const AnimateContent = ({children,setElementInView,className=""}) => {
 
     const { ref, inView, entry } = useInView({
       /* Optional options */
@@ -17,7 +17,7 @@ const AnimateContent = ({children,setElementInView}) => {
         }
       },[inView])
   return (
-    <div ref={ref}>
+    <div className={className} ref={ref}>
         {children}
     </div>
   )

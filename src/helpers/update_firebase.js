@@ -1,5 +1,4 @@
 import { db } from "../firebase.js";
-
 import {
   updateDoc,
   doc,
@@ -36,10 +35,8 @@ export const update_reactions = async (action, sampleId) => {
         where("sampleId", "==", sampleId)
       )
     );
-    // console.log(querySnapshot);
     //get values
     querySnapshot.forEach((doc) => {
-      // console.log(doc.id, ' => ', doc.data());
       docId = doc.id;
       tempTracker = doc.data()[action];
     });

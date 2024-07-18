@@ -11,7 +11,9 @@ import {
   multistepForm,
   notifications,
   pwordGenerator,
+  timeTrackerApp,
   rpsSite,
+  hangmanImg,
   bodyMass,
   clockSite,
   portfolio,
@@ -21,6 +23,7 @@ import {
   speakerSite,
   rateUsCard,
   ccInput,
+  desertCartImg,
 } from "./const";
 
 export default {
@@ -200,6 +203,7 @@ export default {
       borderRadius: "54% 36% 21% 59% / 82% 91% 34% 62%",
       category: "junior",
     },
+
     {
       id: 18,
       title: "Movie Site",
@@ -239,6 +243,39 @@ export default {
       img: pomodoroImg,
       site: "https://jgreen721.github.io/pomodorotimer",
       category: "senior",
+    },
+
+    // ADDING NEW ENTRIES -- SERIALIZED_DATA(with category) becomes agnostic to order to this will work/scale.
+    // Add new entry to firebase and everything should then be in sync.
+    {
+      id: 22,
+      title: "Time-Tracker App",
+      description:
+        "A person time-tracker UI that features mock-server behavior with splash/skeleton loaders and a theme-picker to optimize the user experience.",
+      technology: ["React"],
+      img: timeTrackerApp,
+      site: "https://weekly-time-tracker.vercel.app/",
+      category: "junior",
+    },
+    {
+      id: 23,
+      title: "Hangman Game",
+      description:
+        "Using the latest version of NextJS, enjoy this take on the classic Hangman game. Featuring pleasing color design and animations. Styled with Tailwind",
+      technology: ["Next", "Tailwind"],
+      img: hangmanImg,
+      site: "https://nextjs-hangman-alpha.vercel.app/",
+      category: "senior",
+    },
+    {
+      id: 24,
+      title: "Deserts Checkout",
+      description:
+        "A NextJS and Tailwind styled application of a delicious desert items and a user cart. Featuring a context store that easily tracks 1 source of truth for all data fed  to the individual components. Just needs a backend slapped on it and a delivery truck!",
+      technology: ["Next", "Tailwind"],
+      img: desertCartImg,
+      site: "https://nextjs-deserts-cart.vercel.app/",
+      category: "junior",
     },
   ],
   categories: {

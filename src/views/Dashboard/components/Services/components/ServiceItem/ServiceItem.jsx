@@ -13,16 +13,16 @@ const ServiceItem = ({service}) => {
         }
       },[elementInView])
   return (
-    <AnimateContent setElementInView={setElementInView}>
+    <AnimateContent setElementInView={setElementInView} className="service-item">
 
     <li ref={elRef} key={service.id} className={`service-item ${service.preAnimatedState}`}>
-    <div className="service-img-div">
-      <img className="service-img" src={service.img} alt="" />
+      <div className="service-img-div">
+        <img className="service-img" src={service.img} alt="" />
       </div>
       <h2 className="service-title">{service.name}</h2>
       <h5 className="service-blurb mid-thin">{service.blurb}</h5>
   </li>
-  </AnimateContent>
+   </AnimateContent>
   )
 }
 

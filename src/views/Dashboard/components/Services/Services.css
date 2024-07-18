@@ -3,6 +3,7 @@
   /* border: 3px solid red; */
   width: 100%;
   padding: 10rem 0;
+  margin: 7.5rem 0;
 }
 
 .services-content {
@@ -22,14 +23,22 @@
 
 .services-list {
   display: flex;
-  align-items: stretch;
   text-align: center;
-  /* border: 2px solid red; */
   gap: 2rem;
+
+  /* align-items: stretch; */
+  /* gap: 2rem; */
+  /* border: 3px solid green; */
 }
 
 @media screen and (max-width: 950px) {
   .services-list {
     flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .services-container {
+    margin: 0rem;
   }
 }

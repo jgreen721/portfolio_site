@@ -34,9 +34,12 @@ export const portfolio = "./assets/challenges/junior/portfoliosample.png";
 export const quiz = "./assets/challenges/junior/quiz.png";
 export const dictionary = "./assets/challenges/junior/dictionary.png";
 export const spaceApp = "./assets/challenges/junior/space_app.png";
+export const timeTrackerApp = "./assets/challenges/junior/time-tracker.png";
+export const desertCartImg = "./assets/challenges/junior/desertcart.png";
 
 //expert
 export const taskManager = "./assets/challenges/senior/taskmanager.png";
 export const movieSite = "./assets/challenges/senior/moviesite.png";
 export const speakerSite = "./assets/challenges/senior/speakersite.png";
 export const pomodoroImg = "./assets/challenges/senior/pomodoro.png";
+export const hangmanImg = "./assets/challenges/senior/hangman.png";

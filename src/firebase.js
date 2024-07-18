@@ -1,13 +1,11 @@
-// create a likes/comments table
-// comments - {username, comment, projectId}
-// likes - {username,projectId}  -- filter all likes matching project Id, display who liked it upon a hover event?
-
+// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
+import { getFirestore } from "@firebase/firestore";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
-// import.meta.env.VITE_SOME_KEY
-
-// Your Firebase config here
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: import.meta.env.VITE_AUTH_DOMAIN,
@@ -19,4 +17,5 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+
 export const db = getFirestore(app);

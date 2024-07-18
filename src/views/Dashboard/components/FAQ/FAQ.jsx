@@ -19,7 +19,7 @@ const FAQ = () => {
 
   useEffect(()=>{
     if(elementInView){
-      console.log('addclasses-testimonials');
+      // console.log('addclasses-testimonials');
       elRef.current.classList.add("clear-blur")
     }
   },[elementInView])

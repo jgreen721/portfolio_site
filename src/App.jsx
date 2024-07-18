@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div data-theme="dark" className="app">
-      <button onClick={addNewSample}>PopulateFirebase</button>
+      {/* <button onClick={addNewSample}>PopulateFirebase</button> */}
       <div className="app-content">
      <Navbar/>
     <SiteView/>
